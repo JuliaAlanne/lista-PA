@@ -1,1 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i= 1,j=2;
+    int *p,*q;
+
+    p = i; //ILEGAL
+    q = &j; //LEGAL
+    p = &*&i; // ILEGAL
+    i = (*&)j; //ILEGAL
+    i = *&j; // LEGAL
+    i = *&*&j; // ILEGAL
+    q = *p; // ILEGAL**
+    i = (*p)++ + *q; //ILEGAL o programa soma os valores de *p e *q, mas nao faz a soma do valor de p incrementado.
+}
+
 
