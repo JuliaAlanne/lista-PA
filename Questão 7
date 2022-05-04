@@ -1,1 +1,14 @@
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    p = mat + 1; //válida, pois o ponteiro estar recebendo o vetor "mat" apartir da posição "mat[1]" como mat tem 4 elementos ao ultimo elemento do vetor é atribuido o valor 0 automaticamente
+    p = mat++-; // invalida pois não exite essa sintaxe
+    p = ++mat; // invalida, p
+    x = (*mat)++;   // invalida, pois o mat é um vetor e não um ponteiro, desse modo não pode ser escrito dessa forma.
+    return 0;
+}
+//7. Considerando a declaração int mat[4], *p, x;, quais das seguintes expressões são válidas?
+//Justifique
