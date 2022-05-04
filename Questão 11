@@ -1,1 +1,19 @@
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float aloha[10], coisas[10][5], *pf, value = 2.2;
+    int i=3;
+
+    aloha[2] = value; // Válido
+    scanf("%f", &aloha); // válido
+    aloha = value";            //inválido
+    printf("%f", aloha);      //invalido
+    coisas[4][4] = aloha[3]; //válido
+    coisas[5] = aloha;  //inválido
+    pf = value; // valido
+    pf = aloha; // valido
+    return 0;
+}
