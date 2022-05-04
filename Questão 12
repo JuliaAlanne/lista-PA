@@ -1,1 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+void soma(int a, int b){
+    printf("soma = %d", a+b);
+}
+void subtracao(int a, int b){
+    printf("Subtração = %d",a-b);
+}
+int main()
+{
+    void (*pfuncao[]) (int,int)= {soma, subtracao};
+   int opcao, a=2, b=6;
+   scanf("%d", &opcao);
+   (*pfuncao[opcao])(a,b);
+    return 0;
+}
+// o uso de ponteiro para função serve principalmente para definir, em tempo de execução, qual função será executada,
+// sem a necessidade de escrever o nome da função, de forma explícita naquele ponto do código.
 
