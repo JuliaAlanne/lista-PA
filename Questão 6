@@ -1,8 +1,19 @@
 
-//Assumindo que pulo[] é um vetor do tipo int, quais das seguintes expressões referenciam o
-valor do terceiro elemento do vetor?
+#include <stdio.h>
+#include <stdlib.h>
 
-*(pulo + 2);
-*(pulo + 4);
-pulo + 4;
-pulo + 2; // referencia o valor do terceiro elemento do vetor
+int main()
+{
+    int pulo[];
+    //Assumindo que pulo[] é um vetor do tipo int, quais das seguintes expressões referenciam o
+    //valor do terceiro elemento do vetor?
+
+    *(pulo + 2);
+    *(pulo + 4);
+    pulo + 4;
+    pulo + 2; //*
+
+    return 0;
+}
+// o valor do terceiro elemeto do vetor é referenciado por "*pulo +2", tendo em vista que "pulo" é um vetor e não um ponteiro.
+
